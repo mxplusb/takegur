@@ -65,7 +65,7 @@ func Reader(regex *regexp.Regexp) {
 
 	req, err := http.NewRequest("GET", "https://api.imgur.com/3/gallery.json", nil)
 	// my API key.
-	req.Header.Add()
+	req.Header.Add("Authorization", "Client-ID 3be214d8f541f09")
 
 	fmt.Println("downloading data from imgur.")
 	resp, err := client.Do(req)
@@ -92,7 +92,7 @@ func Reader(regex *regexp.Regexp) {
 				albumUri := fmt.Sprintf("https://api.imgur.com/3/album/%s/images", jsonResults.Data[key].ID)
 				fmt.Println(albumUri)
 				req, err := http.NewRequest("GET", albumUri, nil)
-				req.Header.Add()
+				req.Header.Add("Authorization", "Client-ID 3be214d8f541f09")
 				if err != nil {
 					fmt.Println(err)
 				}
@@ -118,7 +118,7 @@ func Reader(regex *regexp.Regexp) {
 				imageUri := fmt.Sprintf("https://api.imgur.com/3/image/%s/", jsonResults.Data[key].ID)
 				fmt.Println(imageUri)
 				req, err := http.NewRequest("GET", imageUri, nil)
-				req.Header.Add()
+				req.Header.Add("Authorization", "Client-ID 3be214d8f541f09")
 				if err != nil {
 					fmt.Println(err)
 				}
