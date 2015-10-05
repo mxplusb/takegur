@@ -15,7 +15,7 @@ before_install:
   - sudo apt-get install -y bats
 
 install:
-  - go get https://github.com/mynameismevin/takegur
+  - go get github.com/mynameismevin/takegur
 
 script:
   - bats tests.sh
