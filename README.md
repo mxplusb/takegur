@@ -1,5 +1,5 @@
 # takegur
-steal all the images for reposts! takegur can save wallpapers, black twitter, mobile wallpapers,
+steal all the images for reposts **MUAHAHAHAHAHA** takegur can save wallpapers, black twitter, mobile wallpapers,
 dickbutt images, epic fails, reactions (gifs or images), Stay Classy, and Darwin Awards from the Imgur galleries.
 
 One thing to note, it doesn't save anything specific. You run it, `takegur wallpapers`, and it will
@@ -82,4 +82,4 @@ section.
 
 ## Authors
 
-Made with <3 by picturesarenice and emi8ly.
+Made with :heart: by picturesarenice and emi8ly.
